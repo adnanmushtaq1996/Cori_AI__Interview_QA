@@ -21,13 +21,12 @@ letter_counter = 0
 non_letter_counter = 0
 
 # Load Data
-
 # Read the URL Txt file 
-url = 'http://textfiles.com/adventure/aencounter.txt'
+url = 'https://vmsensorlog.westeurope.cloudapp.azure.com:1880/huckleberry-finn'
 file = urllib.request.urlopen(url)
 
 # Write data to txt file
-text_file = open("data.txt", "wt")
+text_file = open("data.txt", "wt",encoding='utf-8')
 
 for line in file:
     decoded_line = line.decode("utf-8")
@@ -129,3 +128,4 @@ print("\nANSWER 4 : The Top three most common words are : ",top_3)
 print("\nANSWER 5 : The Top three most common letters are : ",list(frequency_dict.keys())[-3:])
 print("\nANSWER 7 : Words only used once : ",mylist)
 print("\nANSWER 8 : All letters not used in the document : ",temp)
+
