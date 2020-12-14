@@ -17,7 +17,6 @@ import argparse
 
 def multiple_counter():
     # Initialize Counters
-    word_counter = 0
     letter_counter = 0
     non_letter_counter = 0
     for i in data:
@@ -27,10 +26,11 @@ def multiple_counter():
             if i != " ":
                 non_letter_counter = non_letter_counter + 1
 
-    if letter_counter != 0:
-        print('"%d words", where %d is the number of words in the given document' %(letter_counter, letter_counter)) 
+
     if len(data.split()) != 0:
-        print('"%d letters", where %d is the number of letters in the given document' %(len(data.split()), len(data.split())))   
+        print('"%d words", where %d is the number of words in the given document' %(len(data.split()), len(data.split())))   
+    if letter_counter != 0:
+        print('"%d letters", where %d is the number of letters in the given document' %(letter_counter, letter_counter)) 
     if non_letter_counter != 0:
         print('"%d symbols", where %d is the number of non-letter and non-digit character, excluding white spaces, in the document' %(non_letter_counter, non_letter_counter))
 
@@ -49,13 +49,13 @@ def common_occurence():
     popular_words = sorted(word_counter, key = word_counter.get, reverse = True)
 
     top_3 = popular_words[:3]
-    print(top_3)  
+    #print(top_3)  
 
     # Method 2
     from collections import Counter
     words_to_count = (word for word in data.split() if word[:1].isupper())
     c = Counter(words_to_count)
-    print(c.most_common(3))
+    #print(c.most_common(3))
 
     if len(top_3) != 0:
         print('"Top three most common words: %s, %s, %s", where %s, %s, and %s are the top three most common words' %(*top_3, *top_3))
