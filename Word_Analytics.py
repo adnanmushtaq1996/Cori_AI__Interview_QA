@@ -1,4 +1,4 @@
-# Word Analytics CORI AI
+# Word Analytics 
 
 """
 Created on : Sun 13 14:03:01 2020

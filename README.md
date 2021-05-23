@@ -1,5 +1,5 @@
-# Cori_AI_Interview_QA
-An interview with Startup Cori AI for post of Researcher In Data Science and Machine Learning
+# Word Analytics for Analyzing Words in a URL
+An interview with Startup for post of Researcher In Data Science and Machine Learning
 
 
 ## Table of Contents

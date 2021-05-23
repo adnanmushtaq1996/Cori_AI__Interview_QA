@@ -1,4 +1,4 @@
-# Word Analytics CORI AI
+# Word Analytics
 # url = 'https://vmsensorlog.westeurope.cloudapp.azure.com:1880/huckleberry-finn'
 
 """
